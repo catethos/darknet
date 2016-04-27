@@ -13,6 +13,10 @@ convnet/
 decaf/
 submission/
 cfg/
+VOCdevkit/
+results/
+voc.2012.test
+yolo.weights
 darknet
 
 # OS Generated #

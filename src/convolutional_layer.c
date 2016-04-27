@@ -237,7 +237,7 @@ convolutional_layer make_convolutional_layer(int batch, int h, int w, int c, int
 #endif
     l.activation = activation;
 
-    fprintf(stderr, "Convolutional Layer: %d x %d x %d image, %d filters -> %d x %d x %d image\n", h,w,c,n, out_h, out_w, n);
+    //fprintf(stderr, "Convolutional Layer: %d x %d x %d image, %d filters -> %d x %d x %d image\n", h,w,c,n, out_h, out_w, n);
 
     return l;
 }

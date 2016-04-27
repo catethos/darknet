@@ -276,7 +276,7 @@ void run_nightmare(int argc, char **argv)
                 optimize_picture(&net, im, layer, 1/pow(1.33333333, octave), rate, thresh, norm);
             }
         }
-        fprintf(stderr, "done\n");
+        //fprintf(stderr, "done\n");
         if(0){
             image g = grayscale_image(im);
             free_image(im);

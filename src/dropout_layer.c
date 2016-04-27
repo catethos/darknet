@@ -6,7 +6,7 @@
 
 dropout_layer make_dropout_layer(int batch, int inputs, float probability)
 {
-    fprintf(stderr, "Dropout Layer: %d inputs, %f probability\n", inputs, probability);
+    //fprintf(stderr, "Dropout Layer: %d inputs, %f probability\n", inputs, probability);
     dropout_layer l = {0};
     l.type = DROPOUT;
     l.probability = probability;

@@ -506,7 +506,7 @@ network parse_network_cfg(char *filename)
     free_section(s);
     while(n){
         params.index = count;
-        fprintf(stderr, "%d: ", count);
+        //fprintf(stderr, "%d: ", count);
         s = (section *)n->val;
         options = s->options;
         layer l = {0};
@@ -938,7 +938,7 @@ void load_convolutional_weights(layer l, FILE *fp)
 
 void load_weights_upto(network *net, char *filename, int cutoff)
 {
-    fprintf(stderr, "Loading weights from %s...", filename);
+    //fprintf(stderr, "Loading weights from %s...", filename);
     fflush(stdout);
     FILE *fp = fopen(filename, "rb");
     if(!fp) file_error(filename);
@@ -994,7 +994,7 @@ void load_weights_upto(network *net, char *filename, int cutoff)
 #endif
         }
     }
-    fprintf(stderr, "Done!\n");
+    //fprintf(stderr, "Done!\n");
     fclose(fp);
 }
 
